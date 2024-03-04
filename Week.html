@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 215 Weeks Page</title>
+    <link rel="icon" type="image/x-icon" href="Favicon Assignment/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="weeksstyle.css">
+</head>
+<body>
+    
+  <div class="Banner">
+      <img src="PurdueBanner.jpg" alt="CIT 215 Banner">
+  </div>
+  <div>
+
+      <a class="hamburger" href="#navbar">
+  
+          <i class="fa-solid fa-bars"></i>
+  
+      </a>
+  
+      <nav id="navbar">
+  
+  
+  
+        <ul>
+  
+          <li><a href="https://www.twitter.com"> <i class="fa-brands fa-twitter"></i> Twitter</a></li>
+
+      <li><a href="Homepage.html"><i class="fa-solid fa-house"></i> Home</a></li>
+
+      <li><a href="index.html">Bulletin</a></li>
+
+      <li><a href="Week.html">Week</a></li>
+  
+        </ul>
+  
+        <a class="close" href="#">
+  
+          <i class="fa fa-close"></i>
+  
+        </a>
+      </nav>
+    <br>
+    <br>
+    <h2>Recipes</h2>
+      <div class="container">
+        <main>
+    <div class="demo">
+    <script>
+    let demoRef = document.querySelector(".demo"); 
+      demoRef.textContent =  
+      "Recipe 1, Simple Display"; 
+      demoRef.innerHTML =  
+       `<h3>Recipe1, Simple Display<h3><p>This is an important 
+      skill!</p>`; 
+      let newList = document.createElement("ul"); 
+      let listItem = document.createElement("li"); 
+      listItem.textContent = "Update a Page"; 
+      newList.append(listItem); 
+      listItem = document.createElement("li"); 
+      listItem.textContent = "Create Page Content"; 
+      newList.append(listItem); 
+      demoRef.append(newList); </script>
+    </div>
+    <div id="animalsDiv">
+      <ul id="animalsList"></ul>
+    
+  
+    <script>
+      const petsData = [
+        {
+          petName: "Stella",
+          age: 7,
+          weightInKilos: 24,
+          breed: "Dalmation",
+          pic: "stella.jpg"
+        },
+        {
+          petName: "Cody",
+          age: 8,
+          weightInKilos: 22,
+          breed: "Corgi",
+          pic: "cody.jpg"
+        },
+        {
+          petName: "Mango",
+          age: 2,
+          weightInKilos: 11,
+          breed: "Persian",
+          pic: "mango.jpg"
+        },
+        {
+          petName: "Lucy",
+          age: 4,
+          weightInKilos: 35,
+          breed: "Ball Python",
+          pic: "lucy.jpg"
+        },
+        {
+          petName: "Buhmie",
+          age: 1,
+          weightInKilos: 28,
+          breed: "Bull-dog",
+          pic: "buhmie.jpg"
+        }
+      ];
+  
+      window.onload = function() {
+        let animalsDiv = document.getElementById("animalsDiv");
+        let animalsList = document.getElementById("animalsList");
+  
+        petsData.forEach((animal) => {
+          let listItem = document.createElement("li");
+          listItem.textContent = `${animal.petName} is a ${animal.breed}, and is ${animal.age} years old`;
+  
+          let animalImage = document.createElement("img");
+          animalImage.src = animal.pic;
+  
+          listItem.appendChild(animalImage);
+          animalsList.appendChild(listItem);
+        });
+      };
+
+    </script>
+    </div>
+  </div>
+
+<div id="animalFind">
+<script>
+  let soughtAnimals = [];
+  animals.forEach((animal)=>{
+    if (animal.age >= 2)
+      soughtAnimals.push(animal)
+  });
+</script>
+</div>
+</main>
+</div>
+
+<footer><ul>
+  <li>Purdue University Indianapolis</li>
+  <li>CIT 312</li>
+  <li>CopyRight Purdue University</li>
+</ul></footer>
+</div>
+    </body>
+
+</html>

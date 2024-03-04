@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #cfb991;
+    color: #010326;
+    text-align: center;
+    margin: 0;
+  }
+ 
+   .Banner {
+    display: inline-block;
+    height: 11.5%;
+    width: 100%;
+    background-color: black;
+  }
+   .Banner img {
+    height: 100%;
+    
+  }
+nav {
+
+    position: absolute;
+  
+    z-index: 1000;
+  
+    top: 0;
+  
+    left: 0;
+  
+    width: 30%;
+  
+    height: 100VH;
+  
+    border: 1px;
+  
+    padding-top: 3px;
+    padding-bottom: 3px;
+  
+    background-color: black;
+  
+    text-align: center;
+  
+    transform: translateY(-100%);
+  
+    transition: transform 0.1s ease;
+  
+  }
+  nav ul {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    
+
+  }
+  
+nav a {
+
+text-decoration: none;
+color: black;
+padding: 1px;
+margin: 5px;
+
+
+
+
+}
+nav li{
+    display: block;
+    }
+    
+      
+      
+    nav a:link {
+    background-color: #cfb991;
+    color: black;
+    }
+    nav a:visited {
+    background-color: black;
+    color: white;
+    
+    }
+    nav a:hover {
+    background-color:black;
+    color: rgb(54, 189, 137);
+    }
+
+  nav:target {
+
+    transform: translateY(0);
+    
+  
+  }
+  @media screen and (min-width: 700px) {
+
+    nav {
+  
+      position: static;
+  
+      height: auto;
+  
+      transform: translateY(0);
+  
+      width: 100%;
+  
+    }
+  
+    .hamburger,
+  
+    .close {
+  
+      display: none;
+  
+    }
+  
+  
+  
+    nav li {
+  
+      display: inline-block;
+  
+    }
+  
+  }
+  
+  
+  html,
+body {
+  height: 100%;
+  background-color: #cfb991;
+}
+  #wrapper {
+  
+    width: 100%;
+  }
+  .splash {
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    background-image: url("WebDesign.jpg");
+  }
+  .splash .splashContent {
+    height: 100%;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(89, 72, 150, 0.65);
+  }
+h3{
+    text-align: center;
+    font-style: United Sans;
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1{
+    justify-content: center;
+    margin-left: auto;
+}
+@media all and (min-width: 768px) {
+  .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  header, footer {
+      width: 100%;
+  }
+  main {
+      flex: 2;
+      order: 2;
+      min-height: 80vh;
+  }
+  article {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  footer {
+      order: 4;
+  }
+}
